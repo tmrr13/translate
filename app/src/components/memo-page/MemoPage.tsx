@@ -25,8 +25,8 @@ import classNames from 'classnames';
 import {MobileSidebar} from '../sidebar/MobileSidebar';
 import {DesktopSidebar} from '../sidebar/DesktopSidebar';
 import {Button} from '../button/Button';
-import {SearchResult} from '../search-result/SearchResult';
 import {navigation, userNavigation} from '../utils/consts';
+import {SearchResult} from '../search-result/SearchResult';
 
 export const MemoPage = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
