@@ -2,8 +2,6 @@ import React, { useRef } from 'react';
 import classnames from 'classnames';
 import { IMemoInput } from './IMemoInput';
 
-import './MemoInput.scss';
-
 export const MemoInput = ({onClick}: IMemoInput) => {
   const refFileInput = useRef<HTMLInputElement | null>(null);
 

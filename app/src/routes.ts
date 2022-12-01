@@ -1,11 +1,15 @@
-import {LOGIN_ROUTE, MEMO_PAGE_ROUTE} from './components/utils/consts';
-import {Login} from './components/login/login';
+import {AUTHORIZATION_FORM, MEMO_PAGE_ROUTE} from './components/utils/consts';
 import {MemoPage} from './components/memo-page/MemoPage';
+import {AuthorizationForm} from './components/authorization-form/AuthorizationForm';
 
 export const publicRoutes = [
   {
-    path: LOGIN_ROUTE,
-    Component: Login,
+    path: AUTHORIZATION_FORM,
+    Component: AuthorizationForm,
+  },
+  {
+    path: MEMO_PAGE_ROUTE,
+    Component: MemoPage,
   },
 ]
 

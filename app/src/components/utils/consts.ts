@@ -1,6 +1,9 @@
 import {CalendarIcon, ChartBarIcon, FolderIcon, HomeIcon, InboxIcon, UsersIcon} from '@heroicons/react/24/outline';
+import {SearchResult} from '../search-result/SearchResult';
+import {LoginForm} from '../login-form/LoginForm';
+import {RegistrationForm} from '../registration-form/RegistrationForm';
 
-export const LOGIN_ROUTE = '/login';
+export const AUTHORIZATION_FORM = '/authorization-form';
 export const MEMO_PAGE_ROUTE = '/memo-page';
 
 export const navigation = [
@@ -17,3 +20,15 @@ export const userNavigation = [
   {name: 'Settings', href: '#'},
   {name: 'Sign out', href: '#'},
 ]
+
+export const authorizationFormTabs = [
+  { name: 'log in', href: '#', current: true },
+  { name: 'create account', href: '#', current: false },
+]
+
+export const authorizationFormTabsContent = [
+  {name: 'log in', component: LoginForm },
+  {name: 'create account', component: RegistrationForm }
+];
+
+

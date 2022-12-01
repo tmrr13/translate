@@ -1,18 +1,3 @@
-
-/*
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 import React, {Fragment, useState} from 'react'
 import {Dialog, Menu, Transition} from '@headlessui/react'
 import {
@@ -20,13 +5,13 @@ import {
   BellIcon,
 
 } from '@heroicons/react/24/outline'
-import {MagnifyingGlassIcon} from '@heroicons/react/20/solid'
 import classNames from 'classnames';
 import {MobileSidebar} from '../sidebar/MobileSidebar';
 import {DesktopSidebar} from '../sidebar/DesktopSidebar';
 import {Button} from '../button/Button';
 import {navigation, userNavigation} from '../utils/consts';
 import {SearchResult} from '../search-result/SearchResult';
+import {Notebook} from '../notebook/Notebook';
 
 export const MemoPage = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -138,16 +123,7 @@ export const MemoPage = () => {
 
           <main>
             <div className="py-6">
-              <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
-                <h1 className="text-2xl font-semibold text-gray-900">Dashboard</h1>
-              </div>
-              <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
-                {/* Replace with your content */}
-                <div className="py-4">
-                  <div className="h-96 rounded-lg border-4 border-dashed border-gray-200" />
-                </div>
-                {/* /End replace */}
-              </div>
+              <Notebook />
             </div>
           </main>
         </div>

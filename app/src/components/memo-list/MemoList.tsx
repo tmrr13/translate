@@ -1,8 +1,5 @@
 import React from 'react';
-import classnames from 'classnames';
 import {TMemoList} from './types/TMemoList';
-
-import './MemoList.scss';
 
 export const MemoList = ({collectionWords}: TMemoList) => {
 
