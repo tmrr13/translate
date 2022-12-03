@@ -17,9 +17,8 @@ export const Tabs = ({listTitleTabs, contentTabs, className}: TTabs) => {
 
   return (
     <div className="border-b border-gray-200">
-      <div className="hidden sm:block">
-        <div className="border-b border-gray-200">
-          <nav className="flex`" aria-label="Tabs">
+      <div className="border-b border-gray-200">
+          <nav className="flex" aria-label="Tabs">
             {listTitleTabs.map((tab) => (
               <a
                 key={tab.name}
@@ -41,10 +40,7 @@ export const Tabs = ({listTitleTabs, contentTabs, className}: TTabs) => {
             ))}
           </nav>
         </div>
-      </div>
-      <div>
-        <TabComponent />
-      </div>
+      <TabComponent />
     </div>
   )
 }
